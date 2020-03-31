@@ -18,6 +18,10 @@ const songSchema = new mongoose.Schema({
     min: [1900, 'Year must be valid'],
     required: false
   },
+  url: {
+    type: String,
+    required: true
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
