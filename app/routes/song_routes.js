@@ -73,6 +73,7 @@ router.delete('/songs/:id', requireToken, (req, res, next) => {
       // delete the song ONLY IF the above didn't throw
       song.deleteOne()
     })
+    // send back 204 and no content if the deletion succeeded
     .then(() => res.sendStatus(204))
     .catch(next)
 })
