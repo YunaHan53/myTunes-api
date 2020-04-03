@@ -14,7 +14,7 @@ const router = express.Router()
 // GET /songs
 router.get('/songs', requireToken, (req, res, next) => {
   const userId = req.user._id
-  Song.find({owner: userId})
+  Song.findAll({owner: userId})
     .then(songs => {
       return songs.map(song => song.toObject())
     })
@@ -47,8 +47,6 @@ router.post('/songs', requireToken, (req, res, next) => {
 // UPDATE
 // PATCH /songs/5a7db6c74d55bc51bdf39793
 router.patch('/songs/:id', requireToken, removeBlanks, (req, res, next) => {
-  delete req.body.song.owner
-
   Song.findById(req.params.id)
     .then(handle404)
     .then(song => {
