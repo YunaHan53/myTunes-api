@@ -14,7 +14,7 @@ const router = express.Router()
 // GET /songs
 router.get('/songs', requireToken, (req, res, next) => {
   const userId = req.user._id
-  Song.findAll({owner: userId})
+  Song.find({owner: userId})
     .then(songs => {
       return songs.map(song => song.toObject())
     })
