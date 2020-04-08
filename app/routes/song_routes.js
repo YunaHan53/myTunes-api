@@ -12,9 +12,8 @@ const router = express.Router()
 
 // INDEX
 // GET /songs
-router.get('/songs', requireToken, (req, res, next) => {
-  const userId = req.user._id
-  Song.find({owner: userId})
+router.get('/songs', (req, res, next) => {
+  Song.find()
     .then(songs => {
       return songs.map(song => song.toObject())
     })

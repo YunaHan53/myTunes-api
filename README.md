@@ -6,8 +6,8 @@ This is the backend of my myTunes application.
 I have always been facinated with music and how much music streaming platforms have changed so drastically in the past 2 decades. I remember listening to music on the vinyl when I was very young, and then on tape cassettes and CD players. I also remember clearly when portable players such as ipods came out like it was yesterday. When the internet became popular, I also jumped on the digital bandwagon and later on, when I was 17, I also became interested in building my own websites and have always looked for ways to add a music player to my page. This was no exception. I know this is what I'm passionate about and that's why I'm building my very own music app.
 
 **Templates**
-- [React Template] (https://git.generalassemb.ly/ga-wdi-boston/react-auth-template)
-- [API Template] (https://git.generalassemb.ly/ga-wdi-boston/express-api-template)
+- [React Template](https://git.generalassemb.ly/ga-wdi-boston/react-auth-template)
+- [API Template](https://git.generalassemb.ly/ga-wdi-boston/express-api-template)
 
 **ERD**
 
